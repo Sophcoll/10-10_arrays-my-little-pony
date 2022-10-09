@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Pony Array</title>
+
+    <style>
+        .plum {
+            color: plum;
+        }
+
+        .pink {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Little Pony</h1>
+    <p></p>
+
+    <script>
+
+        var myLittleAlphabet = ['A', ' B', ' C', ' D', ' E', ' F', ' G']; //creating(initializing) the array into a variable
+
+        var myPara = document.querySelector("p"); //fetching the paragraph element on the page and storing it in a variable
+
+        for (var letter of myLittleAlphabet) {
+            if(letter <= 2){
+                myPara.innerHTML += `<span class="plum">${letter}</span>`; 
+            } else if (letter >= 4 && letter <= 6) {
+                myPara.innerHTML += `<span class="pink">${letter}</span>`; 
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
